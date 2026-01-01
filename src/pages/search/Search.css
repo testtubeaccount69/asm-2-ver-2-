@@ -1,0 +1,97 @@
+body {
+    background: #000;
+}
+
+/* Clickable logo */
+.logo {
+    color: red;
+    margin: 20px;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* White Search Card */
+.search-box {
+    width: 55%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 4px;
+
+}
+
+/* Input Row */
+.input-row {
+    position: relative;
+    height: 3rem;
+    border-bottom: #00c7e6 solid 0.1rem;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 22px;
+    color: gray;
+}
+
+/* Buttons Row */
+.action-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.reset-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+}
+
+.search-btn {
+    padding: 10px 25px;
+    background: #00c7e6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Result Section */
+.result-title {
+    color: white;
+    margin: 30px 40px 10px;
+}
+
+/* Posters */
+.result-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 0 40px 80px;
+}
+
+.result-img {
+    width: 160px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.result-img:hover {
+    transform: scale(1.07);
+}
+
+.search-detail-wrapper {
+    padding: 0 40px 60px;
+}

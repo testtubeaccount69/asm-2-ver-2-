@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Browse from "./pages/browse/Browse";
+import Search from "./pages/search/Search";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Navigate to="/browse" replace />} />
+				{/**redirect to browse (seen below) if path is /, basically replace it with browse path, making it default */}
+				<Route path="/browse" element={<Browse />} />
+				<Route path="/search" element={<Search />} />
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;
+
